@@ -180,9 +180,9 @@ languageButton.addEventListener("click", () => {
 
   if (finnishMode) {
     updateLanguage(finnish);
-    languageButton.textContent = "EN";
+    languageButton.textContent = "FI";
   } else {
     updateLanguage(english);
-    languageButton.textContent = "FI";
+    languageButton.textContent = "EN";
   }
 });
