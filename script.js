@@ -176,13 +176,13 @@ function updateLanguage(language) {
 }
 
 languageButton.addEventListener("click", () => {
-  finnishMode = !finnishMode;
-
   if (finnishMode) {
-    updateLanguage(finnish);
-    languageButton.textContent = "FI";
-  } else {
     updateLanguage(english);
+    languageButton.textContent = "FI";
+    finnishMode = false;
+  } else {
+    updateLanguage(finnish);
     languageButton.textContent = "EN";
+    finnishMode = true;
   }
 });
